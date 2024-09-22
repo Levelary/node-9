@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    padding: 80px;
+    background-color: skyblue;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+h1 { 
+    text-align: center;
+}
+
+
+#inner_form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    padding: 10px;
+}
+
+input {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin: 80px auto;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+button {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover { background-color: #0046b3;}
+
+#display-cards {
+    margin-top: 35px;
+    /* background-color: rgb(124, 224, 202); */
+}
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 3px;
+    overflow: hidden;
+    table-layout: auto; /*to make table dynamic*/
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+tbody tr {
+    border: 1px solid black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(219, 217, 217);
+}
+
+tbody td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+tbody td button {
+    background-color: #ce2c27;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+tbody td button:hover {
+    background-color: #b7100a;
+}
+
+tbody td button.update-button {
+    background-color: #276bb9;
+    margin-left: 0;
+}
+
+tbody td button.update-button:hover {
+    background-color: #0046b3;
+}
+
+tbody td:last-child {
+    text-align: left;
+    padding: 10px;
+    border: none;
+    /* vertical-align: middle; */
+    display: flex;
+}
+
+tbody td:last-child button {
+    margin: 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
